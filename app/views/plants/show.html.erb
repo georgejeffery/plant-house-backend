@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+<% @plant.attributes.each do |attr|%>
+<tr><td><%= attr[0]%>: <%=attr[1]%></td></tr>
+<%end%>
+</table>
+<%= link_to 'Edit', edit_plant_path(@plant) %> |
+<%= link_to 'Back', plants_path %>
