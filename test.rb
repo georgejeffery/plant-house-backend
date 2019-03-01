@@ -1,7 +1,7 @@
 require 'Nokogiri'
 require 'open-uri'
 
-url = 'https://garden.org/plants/view/417085/Adenocalymma-comosum/'
+url = 'https://garden.org/plants/view/545484/Aloe-Pink-Blush/'
 
 
 def scrape(url)
