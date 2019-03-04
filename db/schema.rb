@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_01_135132) do
+ActiveRecord::Schema.define(version: 2019_03_04_093454) do
 
   create_table "plants", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2019_03_01_135132) do
     t.string "image_url"
     t.string "soil_ph_preferences"
     t.string "fruit"
+    t.string "commonname"
   end
 
   create_table "room_plants", force: :cascade do |t|
@@ -52,6 +53,10 @@ ActiveRecord::Schema.define(version: 2019_03_01_135132) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.integer "user_id"
+    t.string "light"
+    t.integer "temperature"
+    t.string "humidity"
+    t.boolean "flowers"
   end
 
   create_table "users", force: :cascade do |t|

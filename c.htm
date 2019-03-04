@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="/i/3p/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+   <script src="/i/3p/jquery-ui.min.js" defer="defer"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link href="/i/c/nga_20170921.css" rel="stylesheet">
+  <script type="text/javascript" src="/i/js/colorbox-min.js" defer="defer"></script>
+
+    <link rel="canonical" href="https://garden.org/plants/view/766741/Alternanthera-Plum-Dandy/" />
+<link rel="search" href="https://garden.org/i/search/opensearch_plants.xml" type="application/opensearchdescription+xml" title="NGA Database search" />
+  <meta name="description" content="Plant database entry for Alternanthera Plum Dandy™ with one image and 21 data details.">
+
+    <meta name="msapplication-TileImage" content="/i/p/nga/nga_144.png">
+    <link rel="apple-touch-icon" href="/i/p/nga/nga_57.png"/>  
+    <link rel="apple-touch-icon" sizes="72x72" href="/i/p/nga/nga_72.png"/>  
+    <link rel="apple-touch-icon" sizes="114x114" href="/i/p/nga/nga_114.png"/>  
+  <title>Alternanthera Plum Dandy™ - Garden.org</title>
+
+<script>
+
+
+  $(document).ready(function() {
+
+    // No framing the site, please.
+    if(top!=self) { top.location.replace(document.location); }
+
+    // ////////////////////////////////////////////
+    // The below forces the footer to stick to the bottom, if the page isn't tall enough.
+    var docHeight = $(window).height();
+    var footerHeight = $("#atpfooter").height();
+    var footerTop = $("#atpfooter").position().top + footerHeight;
+ 
+    if (footerTop < docHeight) {
+      $("#atpfooter").css("margin-top", -22+ (docHeight - footerTop) + "px");
+    }
+
+    // ////////////////////////////////////////////
+    // The below loads the system messages, mail, etc. into the modal.
+
+    var trigger = $("body").find('[data-toggle="modal"]');
+    trigger.click(function(e) {
+      e.preventDefault();
+      var theModal = $(this).attr("data-target");
+      var ngaview = $(this).attr("data-ngaview"); 
+      var thetitle = $(this).attr("title");
+
+      $(theModal).find(".modal-title").html(thetitle);
+
+      var uri = theModal.replace("#", "");
+
+      if (uri == "ModalNGAView") {
+        $.get("/apps/atpview/show/"+ngaview+"/", function(data) {
+          var modal = $(this);
+          $(theModal).find(".modal-body").html(data);
+        });
+
+      } else {
+        $.get("/i/ajax/modal/"+uri+".php", function(data) {
+          var modal = $(this);
+          $(theModal).find(".modal-body").html(data);
+        });
+      };
+
+    });
+
+  });
+
+ </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4809383-1', 'auto');
+</script>
+    </head>
+
+  <body><!-- BuySellAds Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds Ad Code -->
+
+  <div class="modal fade" id="ModalMail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">New and Unread Tree-Mails</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/i/icon/loading.gif">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="ModalNGAView" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+          <img src="/i/icon/loading.gif">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="ModalSysMsg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">New Messages from Garden.org</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/i/icon/loading.gif">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top" id="nganav1">
+  <div class="fluid-container">
+    <div class="navbar-header navbar-left pull-left">
+      <a href="/"><i class="fa fa-home fa-fw fa-1x fahomeicon"></i></a>
+    </div>
+    <div class="navbar-header navbar-right pull-right">
+      <ul class="nav pull-left">
+        
+      <li class="navbar-text pull-left"><a href="/users/join/"><i class="fa fa-user-plus"> </i> Signup</a></li>
+      <li class="navbar-text pull-left"><a href="/login.php"><i class="fa fa-sign-in"> </i> Login</a></li>
+
+      </ul>
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="visible-xs-block clearfix"></div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+      
+      <ul class="nav navbar-nav" id="nga_dropdowns">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learning Library <i class="fa fa-caret-down "></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/learn/">Learning Library Homepage</a></li>
+            <li><a href="/learn/library/plantguide/">Plant Care Guides</a></li>
+            <li><a href="/learn/library/foodguide/">Food Gardening Guides</a></li>
+            <li><a href="/learn/library/weeds/">Weed Library</a></li>
+            <li><a href="/learn/library/pests/">Pest Control Library</a></li>
+            <li><a href="/courseweb/">Garden Curricula</a></li>
+            <li><a href="/ideas/podcast/">Podcast</a></li>
+            <li><a href="/learn/videos/">Videos</a></li>
+            <li><a href="/nga/searchqa/">Questions and Answers</a></li>
+            <li><a href="/nga/dictionary/">Garden Dictionary</a></li>
+            <li><a href="/ediblelandscaping/">Edible Landscaping</a></li>
+            <li><a href="/urbangardening/">Urban Gardening</a></li>
+            <li><a href="/learn/articles/">Browse all articles</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plants Database <i class="fa fa-caret-down "></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/plants/">Plants Database</a></li>
+            <li><a href="/plants/search/text.php">Search by name</a></li>
+            <li><a href="/plants/search/advanced.php">Search by characteristics</a></li>
+            <li class="divider"></li>
+            <li><a href="/plants/multi/">Landscape Photos</a></li>
+            <li><a href="/apps/plant_photos/view/">See All New Database Photos</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools &amp; Apps <i class="fa fa-caret-down "></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/apps/">View All Apps</a></li>
+            <li><a href="/apps/calendar/">Vegetable Planting Calendar</a></li>
+            <li><a href="/apps/frost-dates/">Frost Dates Lookup</a></li>
+            <li><a href="/apps/swap/">Seed Swaps</a></li>
+            <li><a href="/lists/">Plant Lists</a></li>
+            <li><a href="/nga/calculators/">Gardening Calculators</a></li>
+            <li><a href="/greenpages/">Green Pages</a></li>
+            <li><a href="/nga/zipzone/">Zone Lookup</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <i class="fa fa-caret-down "></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/ideas/">Gardening News</a></li>
+            <li><a href="/forums/">Forums</a></li>
+            <li><a href="/blogs/">Blogs</a></li>
+            <li><a href="/apps/events/">Gardening Calendar of Events</a></li>
+            <li><a href="/frogs/">Gardening Knowledgebase</a></li> 
+            <li><a href="/frogs/ask/">Ask a Question</a></li>
+            <li><a href="/ideas/raffles/">Not-a-Raffle-Raffles</a></li>
+            <li><a href="/apps/photocontest/">Photo Contests</a></li>
+          </ul>
+        </li>
+      </ul>
+  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <style>
+    #row_ngalogo {
+      background-image: url("/pics/2018-10-10/Marilyn/1a3cb2.jpg");
+    }
+  </style>
+
+  <div class="fluid-container">
+    <div class="col-xs-12" id="row_ngalogo">
+     
+
+     <a href="/"><img src="/i/p/nga/header/logo.png" width="154" height="150" alt="National Gardening Association Logo" class="nga_nav150"></a><a href="/plants/"><img src="/i/p/nga/header/plants.png" width="250" height="150" id="row_text" class="nga_nav150"></a><a href="/special/offers/newsletter_signup.php"><img src="/i/p/newsletter_signup.png" class="nl_signupbutton" style="border:1px solid black;"></a>
+
+    </div>
+  </div>
+<div class="container-fluid" id="ngabody"><div class="row" style="margin-bottom:5px;">
+          <div class="col-sm-8">
+            <h1 class="page-header"><i><a href="/plants/browse/plants/genus/Alternanthera/">Alternanthera</a></i> Plum Dandy™</h1>
+          </div>
+          <div class="col-sm-4 text-right">
+            <h2 class="page-header">
+<form class="form-inline" action="/plants/search/text/" method="get">
+  <div class="input-group">
+    <input type="text" class="form-control" name="q" placeholder="Search Plants">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+    </span>
+  </div>
+</form>
+</h2>
+          </div>
+          </div><div class="row"><div class="col-sm-12"><center><script>
+if ($(window).width() > 1024) {
+  document.write('<ins data-revive-zoneid="3" data-revive-id="311bdfe392f903548d741a903b5c48bb"></ins><scr'+'ipt async src="/rv/www/delivery/asyncjs.php"></scr'+'ipt>');
+}
+if ($(window).width() < 1025) {
+  document.write('<ins data-revive-zoneid="2" data-revive-id="311bdfe392f903548d741a903b5c48bb"></ins><scr'+'ipt async src="/rv/www/delivery/asyncjs.php"></scr'+'ipt>');
+}
+</script></center>
+<div class="fluid-container">
+  <div class="row">
+  
+  <div class="col-sm-6"><div class="panel panel-default "><div class="panel-heading">Trade name information:</div><div class="panel-body">Trade Name: Plum Dandy™<BR>Cultivar name: 'Plum Dandy'</div></div><div     ><table  class="table table-striped table-bordered table-hover simple-table"    ><caption>General Plant Information (<a href="/plants/propose/databox/766741/" class="userlink">Edit</a>)</caption> <tbody><tr><td style="width:150px;" data-th="">Plant Habit:</td><td data-th=""><span class="db_tooltip" title="A forb is a herbaceous flowering plant that is not a grass, sedge or rush.">Herb/Forb</span><BR>
+</td></tr><tr><td style="width:150px;" data-th="">Life cycle:</td><td data-th="">Perennial<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Sun Requirements:</td><td data-th="">Full Sun to Partial Shade<BR>
+Partial or Dappled Shade<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Water Preferences:</td><td data-th=""><span class="db_tooltip" title="average moisture">Mesic</span><BR>
+</td></tr><tr><td style="width:150px;" data-th="">Soil pH Preferences:</td><td data-th="">Slightly acid (6.1 – 6.5)<BR>
+Neutral (6.6 – 7.3)<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Minimum cold hardiness:</td><td data-th="">Zone 10a -1.1 °C (30 °F) to +1.7 °C (35 °F)<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Maximum recommended zone:</td><td data-th="">Zone 11<BR>
+</td></tr><tr><td style="width:150px;" data-th=""><span class="db_tooltip" title="Write &quot;feet&quot; or &quot;inches&quot; instead of using quotes"><B>Plant Height</B></span>:</td><td data-th="">12 to 16 inches</td></tr><tr><td style="width:150px;" data-th=""><span class="db_tooltip" title="Write &quot;feet&quot; or &quot;inches&quot; instead of using quotes"><B>Plant Spread</B></span>:</td><td data-th="">12 to 18 inches</td></tr><tr><td style="width:150px;" data-th="">Leaves:</td><td data-th="">Unusual foliage color<BR>
+Other: Attractive purple foliage.<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Flowers:</td><td data-th="">Inconspicuous<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Bloom Size:</td><td data-th="">Under 1"<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Suitable Locations:</td><td data-th="">Houseplant<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Uses:</td><td data-th="">Groundcover<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Resistances:</td><td data-th="">Humidity tolerant<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Propagation: Other methods:</td><td data-th="">Cuttings: Stem<BR>
+</td></tr><tr><td style="width:150px;" data-th="">Containers:</td><td data-th="">Needs excellent drainage in pots<BR>
+</td></tr></tbody></table></div><P></div>
+<div class="col-sm-6"><center><a href="#" data-toggle="modal" data-target="#ModalNGAView" data-ngaview="db_photo-535680" title="Image"><img src="/pics/2018-07-31/Onewish1/d3abf8-300.jpg" width="300" height="300" alt="Image" title="Image" class="thumb"></a><P><script>
+document.write('<ins data-revive-zoneid="1" data-revive-id="311bdfe392f903548d741a903b5c48bb"></ins><scr'+'ipt async src="/rv/www/delivery/asyncjs.php"></scr'+'ipt>');
+</script><P><P></center></div></div></div><div class="panel panel-default "><div class="panel-heading">Photo gallery:</div><div class="panel-body"><center><div class="plant_thumbbox"><a href="/plants/photo/535680/"><img src="/pics/2018-07-31/Onewish1/d3abf8-175.jpg" width="175" height="175" alt="Location: NJDate: 2018-07-28" title="Location: NJDate: 2018-07-28" class="plant_thumbimage"></a><br>By <a href="/users/profile/Onewish1/">Onewish1</a><BR><img src="/i/colorbox/loading.gif" id="plants_images-iid-535680-Onewish1-wait" class="rwdicon" width="16" height="16" title="Waiting" alt="Waiting" style="display:none;"> <a href="/not.php"><img src="/i/icon/tu-green.png" class="rwdicon" width="16" height="16" title="Login to give thumbs-ups" class="thumbgreen userlink" alt="Give a thumbs up"></a> <span id="thumbs-plants_images-iid-535680-Onewish1" class="social_count" href="#" data-toggle="modal" data-target="#ModalNGAView" data-ngaview="thumbs_count-plants_images-iid-535680" title="Viewing Thumbs">  (<a href="/thumbs/view/plants_images/iid/535680/">3</a>)</span>
+
+
+
+
+</div> </center></div></div><P><div class="panel panel-default "><div class="panel-heading">Discussion Threads about this plant</div><div class="panel-body"><div     ><table  class="table table-striped table-bordered table-hover pretty-table table_has_headers"    >  <thead><tr class="1551701041"><th class="1551701041">Thread Title</th><th class="1551701041">Last Reply</th><th class="1551701041">Replies</th></tr></thead> <tbody><tr><td data-th="Thread Title"><a href="/thread/view/80615/Coleus-2018/">Coleus 2018</a> by CarolineScott</td><td data-th="Last Reply">Oct 4, 2018 6:52 AM</td><td data-th="Replies">31</td></tr></tbody></table></div></div></div><P><P><center><script>
+if ($(window).width() > 1024) {
+  document.write('<ins data-revive-zoneid="3" data-revive-id="311bdfe392f903548d741a903b5c48bb"></ins><scr'+'ipt async src="/rv/www/delivery/asyncjs.php"></scr'+'ipt>');
+}
+if ($(window).width() < 1025) {
+  document.write('<ins data-revive-zoneid="2" data-revive-id="311bdfe392f903548d741a903b5c48bb"></ins><scr'+'ipt async src="/rv/www/delivery/asyncjs.php"></scr'+'ipt>');
+}
+</script></center><P><P><div class="panel panel-default "><div class="panel-body"><B>Adding Actions:</B><P><a href="/plants/propose/ajax_photo/766741/" class="userlink">&raquo; Upload a photo</a><br><a href="/plants/add_comment.php?pid=766741" class="userlink">&raquo; Post a comment</a><BR><a href="/plants/propose/event_report/766741/" class="userlink">&raquo; Add an event report</a><br><P><p></div></div><P><a href="/plants/propose/new_plant/" class="userlink">&laquo; Add a new plant to the database</a><P><a href="/plants/">&laquo; The Plants Database Front Page</a></div></div></div><div id="atpfooter"><div class="container-fluid">
+          <div class="col-sm-4">
+            <a href="/">Garden.org Homepage</a><BR>
+            <a href="/help/">Help using the site</a><BR>
+            <a href="/about/">About</a><BR>
+            <a href="/about/contact/">Contact</a><BR>
+            <a href="/about/tos/">Terms of Service</a><BR>
+            <a href="/about/privacy/">Privacy</a><BR>
+            <a href="/users/memberlist/">Memberlist</a><BR>
+            <a href="/special/acorns/">Acorns</a><BR>
+            <a href="/about/links/">Links</a><BR>
+            <a href="/apps/ask/">Ask a Question</a><BR>
+            <a href="/newsletter/">Newsletter</a><BR>
+            
+    <p>&copy; 1972 - 2019 <a href="/">National Gardening Association</a><p>
+    Times are presented in US Central Standard Time<p>
+          </div>
+     <div class="col-sm-2 text-left">
+      <a href="https://www.pinterest.com/ngagrows/"><i class="fa fa-pinterest-square fa-fw fa-2x"></i>Pinterest</a><br>
+      <a href="https://www.facebook.com/Garden.Org/"><i class="fa fa-facebook-square fa-fw fa-2x"></i>Facebook</a><br>
+      <a href="https://www.youtube.com/user/nationalgardening"><i class="fa fa-youtube-square fa-fw fa-2x"></i>Youtube</a><br>
+      <a href="https://twitter.com/NatlGardening"><i class="fa fa-twitter-square fa-fw fa-2x"></i>Twitter</a><br>
+      <a href="https://www.instagram.com/nationalgardeningassoc/"><i class="fa fa-instagram fa-fw fa-2x"></i>Instagram</a><br>
+    </div><div class="col-sm-6 text-right"><p>Today's site banner is by <a href="/users/profile/Marilyn/">Marilyn</a> and is called "<a href="/thread/go/102714/">'Crater Lake Blue'</a>"<p></div></div></div><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script type="text/javascript" src="/i/js/nga_20170818.js"></script>
+  <script>
+    ga('send', 'pageview');
+  </script>
+    </body></html>
