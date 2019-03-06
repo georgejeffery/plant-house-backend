@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       end
       resources :users
       resources :rooms
+      post 'authenticate', to: 'authentication#create'
     end
   end
 end

@@ -1,11 +1,15 @@
 class Api::V1::RoomsController < API::V1::BaseController
+
+
   def show
-    room = Room.find(params[:id])
+      room = Room.find(params[:id])
     #plants = room.plants
 
-    render json: room, serializer: RoomSerializer
-    #render json: plants, serializer: PlantSerializer
-  end
+      render json: room, serializer: RoomSerializer
+    #render json: plants, serializer: PlantSerialize
+      render json: {error: "Not a valid user."}, status: 401
+  
+end
 
   def index
     rooms  = Room.all
