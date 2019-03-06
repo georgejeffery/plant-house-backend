@@ -15,6 +15,10 @@ class Plant < ApplicationRecord
    where("flowers is not null")
   end
 
+  def self.noflowers
+    where("flowers is null")
+  end
+
   def self.humid_proof
     where(resistances: 'Humidity tolerant')
   end

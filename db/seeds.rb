@@ -26,28 +26,4 @@ Plant.create!([
   {latin_name: "Chrysanthemum 'Amiko Violet'", plant_habit: "Herb/Forb", life_cycle: "Perennial", sun_requirements: "Full Sun", water_preferences: nil, minimum_cold_hardiness: "Zone 5a -28.9 °C (-20 °F) to -26.1 °C (-15 °F)", maximum_recommended_zone: "Zone 8b", plant_height: "24 to 36 inches", plant_spread: "24 to 36 inches", leaves: nil, flowers: "Showy", bloom_size: nil, underground_structures: nil, suitable_locations: "Houseplant", resistances: nil, propagation: nil, containers: "Needs excellent drainage in pots", flower_color: "Pink. Other", flower_time: "Late summer or early fall. Fall", wildlife_attractant: nil, image_url: "https://i1.wp.com/www.vivercid.com/wp-content/uploads/2017/02/5105-Amiko-Violet-Chrysanthemum.jpg", soil_ph_preferences: "Slightly acid (6.1 – 6.5)", fruit: nil, commonname: nil},
   {latin_name: "Clitoria ternatea 'Double Blue Rose'", plant_habit: "Herb/Forb. Vine", life_cycle: "Perennial", sun_requirements: "Full Sun. Full Sun to Partial Shade", water_preferences: "Mesic", minimum_cold_hardiness: "Zone 9b -3.9 °C (25 °F) to -1.1 °C (30 °F)", maximum_recommended_zone: "Zone 11", plant_height: "6 to 10 feet", plant_spread: nil, leaves: nil, flowers: "Showy", bloom_size: "1\\\"-2\\\"", underground_structures: nil, suitable_locations: "Houseplant. Espalier", resistances: "Humidity tolerant", propagation: nil, containers: "Suitable in 3 gallon or larger. Suitable for hanging baskets. Needs excellent drainage in pots", flower_color: "Blue. Other", flower_time: "Late summer or early fall. Fall", wildlife_attractant: "Bees. Butterflies", image_url: "https://i.pinimg.com/originals/80/df/73/80df731e797aedda37e60c9b78de45b3.jpg", soil_ph_preferences: "Slightly acid (6.1 – 6.5). Neutral (6.6 – 7.3)", fruit: nil, commonname: nil}
 ])
-Room.create!([
-  {name: "New Room", user_id: 1, light: nil, temperature: nil, humidity: nil, flowers: nil},
-  {name: nil, user_id: 4, light: nil, temperature: nil, humidity: nil, flowers: nil},
-  {name: "new Room", user_id: 2, light: nil, temperature: nil, humidity: nil, flowers: nil},
-  {name: "wsd", user_id: 5, light: "low", temperature: nil, humidity: "high", flowers: false},
-  {name: "wsd", user_id: 5, light: "low", temperature: nil, humidity: "high", flowers: false},
-  {name: "wsd", user_id: 5, light: "low", temperature: nil, humidity: "high", flowers: false},
-  {name: "wsd", user_id: 5, light: "low", temperature: nil, humidity: "high", flowers: false},
-  {name: "wsd", user_id: 5, light: "low", temperature: nil, humidity: "high", flowers: false},
-  {name: "dude", user_id: 5, light: "low", temperature: nil, humidity: "high", flowers: false}
-])
-RoomPlant.create!([
-  {room_id: 1, plant_id: 1},
-  {room_id: 1, plant_id: 4},
-  {room_id: 1, plant_id: 6},
-  {room_id: 8, plant_id: 10},
-  {room_id: 9, plant_id: 10}
-])
-User.create!([
-  {name: "George", username: "George", password_digest: nil, email: "george@george.com", encrypted_password: "$2a$11$2naw9sC4qtHe1TH9jhIAbeyN/pWX.LwwdTJu0AEGfH14WXT28xktm", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil},
-  {name: "g", username: "g", password_digest: "$2a$10$rGdo/0zUpNfkyXa8PCSpeeI6Wi28fy0xMkAfqcdy.8cbr6QknYTjC", email: "g@gg.com", encrypted_password: "", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil},
-  {name: nil, username: "hkjher", password_digest: "$2a$10$FcDxIvb4BemtHdPeLqlC4O78aT58uxOvDRef60TeA7UU5S3IgOVQS", email: "", encrypted_password: "", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil},
-  {name: "NewUser", username: "newuser", password_digest: "$2a$10$FTisv6O5qu01qycnEc47y.oGsiB4kkiU/Xc5FywTuuGQCHzf07RtW", email: "newuser@user.com", encrypted_password: "", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil},
-  {name: "Sergio Neves", username: "serg", password_digest: "$2a$10$aleCuYfaIRrmqo.l6Hx5d.9ngrIRqF2A51DNGoa0TOHpmb0EP4Wry", email: "serneves@hotmail.com", encrypted_password: "", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil}
-])
+
