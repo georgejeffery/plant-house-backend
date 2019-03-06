@@ -26,7 +26,12 @@ end
     @user = User.find(params[:user_id])
     @room = Room.new(room_params)
     @room.user = @user
-    @room.plants.push(plant_params)
+    plants = params[:plants]
+    plants.each do |plant|
+      plant = Plant.find(plant["id"])
+      @room.plants.push(plant)
+    end
+    #@room.plants.push(plant_params)
     if @room.save
       render json: @room, status: :created, serializer: RoomSerializer
     else
@@ -53,10 +58,10 @@ end
   private
   
   def room_params
-    params.permit(:name, :humidity, :temperature, :light, :flowers)
+    params.permit(:name, :humidity, :temperature, :light, :flowers, :plants)
   end
 
-  def plant_params
-    params.permit(:plants)
-  end
+  # def plant_params
+  #   params.permit(:plants)
+  # end
 end
