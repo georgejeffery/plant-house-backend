@@ -7,7 +7,7 @@ class Api::V1::RoomsController < API::V1::BaseController
 
       render json: room, serializer: RoomSerializer
     #render json: plants, serializer: PlantSerialize
-      render json: {error: "Not a valid user."}, status: 401
+      #render json: {error: "Not a valid user."}, status: 401
   
 end
 
@@ -23,10 +23,10 @@ end
 
   def create
 
-    @user = User.find_by(username: params[:username])
+    @user = User.find(params[:user_id])
     @room = Room.new(room_params)
     @room.user = @user
-
+    @room.plants.push(plant_params)
     if @room.save
       render json: @room, status: :created, serializer: RoomSerializer
     else
@@ -54,5 +54,9 @@ end
   
   def room_params
     params.permit(:name, :humidity, :temperature, :light, :flowers)
+  end
+
+  def plant_params
+    params.permit(:plants)
   end
 end
