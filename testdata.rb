@@ -308,8 +308,7 @@
   'resistances' => 'Humidity tolerant',
   'propagation' => 'Other methods',
   'containers' => 'Needs excellent drainage in pots',
-  'miscellaneous' => 'Epiphytic',
-  'parentage' => 'Afterglow x Hallelujah'
+  'image_url' => 'https://i.pinimg.com/originals/c7/db/f9/c7dbf9af9e5185a303619b9c2d510dc6.jpg'
 }
 
 {
@@ -855,15 +854,15 @@
   'maximum_recommended_zone' => 'Zone 11',
   'plant_height' => '4 - 16 feet',
   'leaves' => 'Evergreen',
-  'flowers' => 'Inconspicuous',
+  'flowers' => '',
   'bloom_size' => 'Under 1\"',
   'underground_structures' => 'Taproot',
   'suitable_locations' => 'Houseplant',
   'resistances' => 'Humidity tolerant',
   'propagation' => 'Other methods',
-  'pollinators' => 'Wasps',
   'containers' =>
-    'Suitable in 3 gallon or larger. Needs excellent drainage in pots'
+    'Suitable in 3 gallon or larger. Needs excellent drainage in pots',
+  'image_url' => 'https://www.mcardles.com/media/catalog/product/cache/1/image/900x900/9df78eab33525d08d6e5fb8d27136e95/f/i/ficus_alii_detail_2.jpg'
 }
 {
   'latin_name' => "Ficus elastica 'Robusta'",
@@ -904,7 +903,8 @@
   'resistances' => 'Humidity tolerant',
   'propagation' => 'Other methods',
   'containers' =>
-    'Suitable for hanging baskets. Needs excellent drainage in pots'
+    'Suitable for hanging baskets. Needs excellent drainage in pots',
+    'image_url' => 'http://iron-dog-and-ware.com/blog/wp-content/uploads/2011/04/Thads-Diamond-Dust-1024x768.jpg'
 }
 {
   'latin_name' => "Episcia 'Thad's Pinka Dot'",

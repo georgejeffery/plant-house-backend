@@ -37,7 +37,11 @@ class Api::V1::UsersController < API::V1::BaseController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+    @user = User.find(params[:id])
+    @user.rooms.destroy_all
     @user.destroy
+
+    render :json => {message: "Success"}, status: :ok
   end
 
 
