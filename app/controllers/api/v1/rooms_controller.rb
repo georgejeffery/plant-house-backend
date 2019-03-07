@@ -31,11 +31,12 @@ end
       plant = Plant.find(plant["id"])
       @room.plants.push(plant)
     end
+    byzbu
     #@room.plants.push(plant_params)
     if @room.save
       render json: @room, status: :created, serializer: RoomSerializer
     else
-      render json: @room.errors, status: :unprocessable_entity
+      render json: @room.errors.full_messages, status: :unprocessable_entity
     end
   end
 
